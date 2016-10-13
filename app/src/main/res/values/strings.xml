@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SpeakingGlove</string>
+    <string name="welcome_to_speaking_glove">Welcome to Speaking Glove</string>
+    <string name="exit">Exit</string>
+    <string name="about">About</string>
+    <string name="start">Start</string>
+</resources>
