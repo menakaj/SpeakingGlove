@@ -19,14 +19,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         start = (Button) findViewById(R.id.startButton);
-        about = (Button) findViewById(R.id.aboutButton);
-        exit = (Button) findViewById(R.id.exitButton);
+//        about = (Button) findViewById(R.id.aboutButton);
+//        exit = (Button) findViewById(R.id.exitButton);
 
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent sppechIntent = new Intent(getApplicationContext(), SpeechRecognitionActivity.class);
-                startActivity(sppechIntent);
+                Intent speechIntent = new Intent(getApplicationContext(), SpeechRecognitionActivity.class);
+                speechIntent.putExtra("sessionId", "sesson1");
+                startActivity(speechIntent);
             }
         });
 
